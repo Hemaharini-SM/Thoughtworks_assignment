@@ -1,0 +1,11 @@
+public class TestBook {
+    public static void main(String[] args) {
+        Author[] authors = new Author[2];
+        authors[0] = new Author("hema", "hema@somewhere.com", 'm');
+        authors[1] = new Author("harini", "harini@nowhere.com", 'm');
+
+        Book java = new Book("Java", authors, 19.99, 99);
+        System.out.println(java);  
+        System.out.println("Author names: " + java.getAuthorNames());
+    }
+}
