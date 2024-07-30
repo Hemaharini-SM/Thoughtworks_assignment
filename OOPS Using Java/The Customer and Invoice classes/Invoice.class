@@ -35,8 +35,8 @@ public class Invoice {
     }
 
     public int getAmountAfterDiscount(){
-        double discount = (this.amount*(this.getCustomerDiscount))/100;
-        return this.amount - discount;
+        double discount = (this.amount*(this.getCustomerDiscount()))/100;
+        return (int) this.amount - discount;
     }
 
     @Override
